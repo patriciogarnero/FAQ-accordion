@@ -1,0 +1,173 @@
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 400;
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
+}
+
+h1 {
+  font-weight: 700;
+  color: hsl(237, 12%, 33%);
+}
+
+input {
+  display: none;
+}
+
+label {
+  transition: ease .5s;
+  position: relative;
+  display: block;
+}
+
+label:hover {
+  color: hsl(14, 88%, 65%);
+
+}
+
+.wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.boxIllustration {
+  display: none;
+}
+
+.backgroundImage {
+  background-image: url("images/illustration-woman-online-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: 1rem;
+  background-size: 80%;
+  height: 16rem;
+  width: 20rem;
+  position: absolute;
+  margin-top: 1.7rem;
+}
+
+.FAQcontainer {
+  background-color: #FFF;
+  background-image: url("images/bg-pattern-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  border-radius: 30px;
+  color: hsl(240, 6%, 50%);
+  text-align: center;
+  width: 70%;
+  margin: 10rem 0;
+  padding: 3rem 1.5rem;
+}
+
+
+
+.FAQcontainer h1 {
+  margin-top: 7rem;
+}
+
+.question {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px;
+  border-style: solid;
+  border-color: hsl(240, 5%, 91%);
+  padding: 1.2rem 0;
+  text-align: left;
+  font-size: 0.85rem;
+}
+
+label::after {
+  content: url("images/icon-arrow-down.svg");
+  position: absolute;
+  right: 1vw;
+}
+
+/* THIS IS THE SHOWING/HIDING ACCORDEON CONTENT */
+
+input + label +  .content {
+    display: none;
+}
+
+input:checked + label + .content {
+    display: block;
+}
+
+input:checked + label {
+  font-weight: 700;
+}
+
+input:checked + label::after {
+	transform: rotate(180deg);
+}
+
+@media (min-width: 1100px) {
+  .wrapper2 {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .wrapper {
+    flex-direction: row;
+    width: 80%;
+  }
+
+  .boxIllustration {
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    background-image: url(images/illustration-box-desktop.svg);
+    background-size: 130%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 4rem;
+    z-index: 3;
+
+  }
+
+  .backgroundImage {
+    background-image: url(images/illustration-woman-online-desktop.svg);
+    background-size: 90%;
+    background-position: -4rem center;
+    position: absolute;
+    height: 30rem;
+    width: 25rem;
+    display: inline-block;
+    margin-top: -3rem;
+  }
+
+  .FAQcontainer {
+    text-align: left;
+    padding: 5rem 2rem 5rem 45%;
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-position: -9rem center;
+    background-size: 50%;
+    margin-top: 5rem;
+  }
+
+  .FAQcontainer h1 {
+    margin-top: auto;
+  }
+
+}
+
+@media (min-width: 1440px) {
+  .backgroundImage {
+    background-size: 110%;
+    width: 30rem;
+    background-position: -4.5rem center;
+  }
+
+  .FAQcontainer {
+    background-size: 55%;
+  }
+  .boxIllustration {
+    left: 5rem;
+    width: 8rem;
+    height: 8rem;
+  }
+}
