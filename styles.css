@@ -120,10 +120,10 @@ input:checked + label::after {
 
   .boxIllustration {
     display: inline-block;
-    width: 5rem;
+    width: 8rem;
     height: 5rem;
     background-image: url(images/illustration-box-desktop.svg);
-    background-size: 130%;
+    background-size: 100%;
     background-repeat: no-repeat;
     position: absolute;
     left: 4rem;
@@ -133,8 +133,8 @@ input:checked + label::after {
 
   .backgroundImage {
     background-image: url(images/illustration-woman-online-desktop.svg);
-    background-size: 90%;
-    background-position: -4rem center;
+    background-size: 110%;
+    background-position: -4.5rem center;
     position: absolute;
     height: 30rem;
     width: 25rem;
@@ -161,7 +161,7 @@ input:checked + label::after {
   .backgroundImage {
     background-size: 110%;
     width: 30rem;
-    background-position: -4.5rem center;
+    background-position: -4.5rem 1rem;
   }
 
   .FAQcontainer {
@@ -171,5 +171,6 @@ input:checked + label::after {
     left: 5rem;
     width: 8rem;
     height: 8rem;
+    background-size: 120%;
   }
 }
