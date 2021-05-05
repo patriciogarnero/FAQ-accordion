@@ -59,6 +59,8 @@ label:hover {
   width: 70%;
   margin: 10rem 0;
   padding: 3rem 1.5rem;
+  -webkit-box-shadow: 1px 24px 38px -21px hsl(237, 12%, 33%);
+  box-shadow: 1px 24px 38px -21px hsl(237, 12%, 33%);
 }
 
 
