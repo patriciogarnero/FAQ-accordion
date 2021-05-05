@@ -112,6 +112,7 @@ input:checked + label::after {
     text-align: center;
     justify-content: center;
     align-items: center;
+    padding: 0 9rem;
   }
   .wrapper {
     flex-direction: row;
@@ -126,14 +127,14 @@ input:checked + label::after {
     background-size: 100%;
     background-repeat: no-repeat;
     position: absolute;
-    left: 4rem;
+    left: 10rem;
     z-index: 3;
 
   }
 
   .backgroundImage {
     background-image: url(images/illustration-woman-online-desktop.svg);
-    background-size: 110%;
+    background-size: 90%;
     background-position: -4.5rem center;
     position: absolute;
     height: 30rem;
@@ -144,10 +145,10 @@ input:checked + label::after {
 
   .FAQcontainer {
     text-align: left;
-    padding: 5rem 2rem 5rem 45%;
+    padding: 5rem 2rem 5rem 50%;
     background-image: url(images/bg-pattern-desktop.svg);
     background-position: -9rem center;
-    background-size: 50%;
+    background-size: 70%;
     margin-top: 5rem;
   }
 
@@ -158,17 +159,22 @@ input:checked + label::after {
 }
 
 @media (min-width: 1440px) {
+  .wrapper2 {
+    padding:0 15rem;
+  }
   .backgroundImage {
-    background-size: 110%;
+    background-size: 90%;
     width: 30rem;
-    background-position: -4.5rem 1rem;
+    background-position: -4.5rem center;
   }
 
   .FAQcontainer {
-    background-size: 55%;
+    padding: 5rem 3rem 5rem 55%;
+    background-size: 65%;
   }
   .boxIllustration {
-    left: 5rem;
+    left: 16rem;
+    top: 19rem;
     width: 8rem;
     height: 8rem;
     background-size: 120%;
